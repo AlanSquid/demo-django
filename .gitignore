@@ -1,0 +1,33 @@
+# Python
+*.pyc
+*.pyo
+__pycache__/
+*.pyd
+
+# 虛擬環境
+venv/
+.env
+
+# Django
+*.log
+*.sqlite3
+db.sqlite3
+
+# 圖片和媒體文件
+media/
+staticfiles/
+
+# IDE/編輯器特定文件
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# 操作系統特定的檔案
+.DS_Store
+Thumbs.db
+
+# Python Egg和Wheel
+*.egg-info/
+dist/
+build/
