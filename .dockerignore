@@ -1,0 +1,22 @@
+
+```
+# Git files
+.git
+.gitignore
+
+# Python virtual environment
+venv
+
+# Python cache files
+__pycache__
+*.pyc
+*.pyo
+
+# pytest cache
+.pytest_cache
+
+# VS Code settings
+.vscode
+
+# Log files
+*.log
