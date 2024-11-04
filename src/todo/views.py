@@ -1,13 +1,18 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+
+from rest_framework import viewsets
 from .models import TodoItem
-from django.http import JsonResponse
+from .serializers import TodoItemSerializer
+
 
 # Create your views here.
 def home(request):
     return HttpResponse('Hello, World!')
 
-def todo_list(request):
-    todos = TodoItem.objects.all().values()
-    return JsonResponse({'todos': list(todos)}, safe=False)
+class TodoItemViewSet(viewsets.ModelViewSet):
+    queryset = TodoItem.objects.all()
+    serializer_class = TodoItemSerializer
+
+
     
