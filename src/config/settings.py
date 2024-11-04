@@ -27,6 +27,23 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+# Logging
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': True,
+    'handlers': {
+        'null': {
+            'class': 'logging.NullHandler',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['null'],
+            'propagate': False,
+        },
+    },
+}
+
 
 # Application definition
 
