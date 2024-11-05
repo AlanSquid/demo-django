@@ -3,7 +3,7 @@
         "model": "todo.TodoItem",
         "pk": 1,
         "fields": {
-            "title": "Learn Django",
+            "title": "Learn Python",
             "completed": false,
             "created": "2024-01-01T00:00:00Z"
         }
@@ -12,7 +12,7 @@
         "model": "todo.TodoItem",
         "pk": 2,
         "fields": {
-            "title": "Learn Docker",
+            "title": "Learn Django",
             "completed": false,
             "created": "2024-01-01T00:00:00Z"
         }
@@ -21,7 +21,25 @@
         "model": "todo.TodoItem",
         "pk": 3,
         "fields": {
+            "title": "Learn Docker",
+            "completed": false,
+            "created": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "todo.TodoItem",
+        "pk": 4,
+        "fields": {
             "title": "Try to build a project with Django and Docker",
+            "completed": false,
+            "created": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "todo.TodoItem",
+        "pk": 5,
+        "fields": {
+            "title": "Deploy the project to Cloud",
             "completed": false,
             "created": "2024-01-01T00:00:00Z"
         }
