@@ -30,4 +30,4 @@ COPY . /app/
 EXPOSE 8000
 
 # Run the application
-CMD ["python", "/app/src/manage.py", "runserver", "0.0.0.0:8000"]
+CMD ["sh", "-c", "cd /app/src && python manage.py migrate && python manage.py loaddata todo_seeders.json && python manage.py runserver 0.0.0.0:8000"]
