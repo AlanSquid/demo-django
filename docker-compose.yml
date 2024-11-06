@@ -19,6 +19,7 @@ services:
 
   web:
     build: .
+    image: alansquid/demo_django
     command: >
       sh -c "
       python /app/src/manage.py migrate &&
