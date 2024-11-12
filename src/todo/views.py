@@ -5,6 +5,7 @@ from .serializers import TodoItemSerializer
 class TodoItemViewSet(viewsets.ModelViewSet):
     queryset = TodoItem.objects.all()
     serializer_class = TodoItemSerializer
+    http_method_names = ['get', 'post', 'put','delete']
 
 
     

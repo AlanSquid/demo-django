@@ -77,6 +77,15 @@ MIDDLEWARE = [
   
 ]
 
+CORS_ALLOW_METHODS = [
+    'GET',
+    'POST',
+    'PUT',
+    'PATCH',
+    'DELETE',  
+    'OPTIONS',
+]
+
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # React 開發伺服器的地址
     "http://localhost:3001"
